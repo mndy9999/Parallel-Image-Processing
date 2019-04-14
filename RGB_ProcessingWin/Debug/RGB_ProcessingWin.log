@@ -1,0 +1,95 @@
+﻿  main.cpp
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(46): warning C4244: '=': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=double
+          ]
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(94): warning C4018: '<': signed/unsigned mismatch
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(95): warning C4018: '<': signed/unsigned mismatch
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(243): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(244): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(246): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(247): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(248): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(250): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(252): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(253): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(254): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(273): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(282): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(261): warning C4244: 'initializing': conversion from 'Value' to 'int', possible loss of data
+          with
+          [
+              Value=float
+          ]
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(309): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(311): warning C4244: '=': conversion from 'uint64_t' to 'int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(312): warning C4244: '=': conversion from 'uint64_t' to 'int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(331): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(331): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(194): warning C4101: 'rgb': unreferenced local variable
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\libraries\tbb_4_4_2\include\tbb\parallel_reduce.h(325): warning C4244: '=': conversion from 'int' to 'Value', possible loss of data
+          with
+          [
+              Value=float
+          ]
+  c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\libraries\tbb_4_4_2\include\tbb\parallel_reduce.h(324): note: while compiling class template member function 'void tbb::internal::lambda_reduce_body<Range,Value,RealBody,Reduction>::join(tbb::internal::lambda_reduce_body<Range,Value,RealBody,Reduction> &)'
+          with
+          [
+              Range=tbb::blocked_range2d<uint64_t,uint64_t>,
+              Value=float,
+              RealBody=main::<lambda_1ff14dd06a77491afeb8243d32552c0c>,
+              Reduction=main::<lambda_d36ca5e26290d4dfa78e02fcd7d2c68e>
+          ]
+  c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\libraries\tbb_4_4_2\include\tbb\parallel_reduce.h(69): note: see reference to function template instantiation 'void tbb::internal::lambda_reduce_body<Range,Value,RealBody,Reduction>::join(tbb::internal::lambda_reduce_body<Range,Value,RealBody,Reduction> &)' being compiled
+          with
+          [
+              Range=tbb::blocked_range2d<uint64_t,uint64_t>,
+              Value=float,
+              RealBody=main::<lambda_1ff14dd06a77491afeb8243d32552c0c>,
+              Reduction=main::<lambda_d36ca5e26290d4dfa78e02fcd7d2c68e>
+          ]
+  c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\libraries\tbb_4_4_2\include\tbb\parallel_reduce.h(432): note: see reference to class template instantiation 'tbb::internal::lambda_reduce_body<Range,Value,RealBody,Reduction>' being compiled
+          with
+          [
+              Range=tbb::blocked_range2d<uint64_t,uint64_t>,
+              Value=float,
+              RealBody=main::<lambda_1ff14dd06a77491afeb8243d32552c0c>,
+              Reduction=main::<lambda_d36ca5e26290d4dfa78e02fcd7d2c68e>
+          ]
+  c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(284): note: see reference to function template instantiation 'Value tbb::parallel_reduce<tbb::blocked_range2d<uint64_t,uint64_t>,float,main::<lambda_1ff14dd06a77491afeb8243d32552c0c>,main::<lambda_d36ca5e26290d4dfa78e02fcd7d2c68e>>(const Range &,const Value &,const RealBody &,const Reduction &)' being compiled
+          with
+          [
+              Value=float,
+              Range=tbb::blocked_range2d<uint64_t,uint64_t>,
+              RealBody=main::<lambda_1ff14dd06a77491afeb8243d32552c0c>,
+              Reduction=main::<lambda_d36ca5e26290d4dfa78e02fcd7d2c68e>
+          ]
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\libraries\tbb_4_4_2\include\tbb\parallel_reduce.h(322): warning C4244: 'argument': conversion from 'const Value' to 'int', possible loss of data
+          with
+          [
+              Value=float
+          ]
+  c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\libraries\tbb_4_4_2\include\tbb\parallel_reduce.h(321): note: while compiling class template member function 'void tbb::internal::lambda_reduce_body<Range,Value,RealBody,Reduction>::operator ()(Range &)'
+          with
+          [
+              Range=tbb::blocked_range2d<uint64_t,uint64_t>,
+              Value=float,
+              RealBody=main::<lambda_1ff14dd06a77491afeb8243d32552c0c>,
+              Reduction=main::<lambda_d36ca5e26290d4dfa78e02fcd7d2c68e>
+          ]
+  c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\libraries\tbb_4_4_2\include\tbb\parallel_reduce.h(151): note: see reference to function template instantiation 'void tbb::internal::lambda_reduce_body<Range,Value,RealBody,Reduction>::operator ()(Range &)' being compiled
+          with
+          [
+              Range=tbb::blocked_range2d<uint64_t,uint64_t>,
+              Value=float,
+              RealBody=main::<lambda_1ff14dd06a77491afeb8243d32552c0c>,
+              Reduction=main::<lambda_d36ca5e26290d4dfa78e02fcd7d2c68e>
+          ]
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\libraries\tbb_4_4_2\include\tbb\parallel_reduce.h(322): warning C4244: '=': conversion from 'int' to 'Value', possible loss of data
+          with
+          [
+              Value=float
+          ]
+  RGB_ProcessingWin.vcxproj -> C:\Users\Kim Jong-Un\Desktop\RGB_ProcessingWin\RGB_ProcessingWin\Debug\RGB_ProcessingWin.exe
