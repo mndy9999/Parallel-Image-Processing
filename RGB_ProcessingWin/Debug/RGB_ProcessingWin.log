@@ -17,37 +17,30 @@ c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(222): 
 c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(223): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'int', possible loss of data
 c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(290): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
 c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(291): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(293): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(294): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(295): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(297): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(297): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(309): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(310): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(312): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(313): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(314): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(316): warning C4244: 'argument': conversion from 'uint64_t' to 'const unsigned int', possible loss of data
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(316): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(340): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(342): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(351): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(353): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(381): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(389): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(367): warning C4244: '=': conversion from 'Value' to 'int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(299): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(312): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(313): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(319): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(343): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(345): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(354): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(356): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(384): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(392): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(370): warning C4244: '=': conversion from 'Value' to 'int', possible loss of data
           with
           [
               Value=float
           ]
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(398): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(408): warning C4244: 'argument': conversion from '_Ty' to 'unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(401): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(411): warning C4244: 'argument': conversion from '_Ty' to 'unsigned int', possible loss of data
           with
           [
               _Ty=uint64_t
           ]
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(430): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
-c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(444): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(433): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(447): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data
+c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(492): warning C4101: 'rgb': unreferenced local variable
 c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\libraries\tbb_4_4_2\include\tbb\parallel_reduce.h(325): warning C4244: '=': conversion from 'int' to 'Value', possible loss of data
           with
           [
@@ -77,7 +70,7 @@ c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\libraries\tbb_4
               RealBody=countNumberOfColouredPixels::<lambda_62760ce51b9592986fbf2a067f4b9582>,
               Reduction=countNumberOfColouredPixels::<lambda_e3d30f90366e9d46e0b778669e1cbed9>
           ]
-  c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(391): note: see reference to function template instantiation 'Value tbb::parallel_reduce<tbb::blocked_range2d<uint64_t,uint64_t>,float,countNumberOfColouredPixels::<lambda_62760ce51b9592986fbf2a067f4b9582>,countNumberOfColouredPixels::<lambda_e3d30f90366e9d46e0b778669e1cbed9>>(const Range &,const Value &,const RealBody &,const Reduction &)' being compiled
+  c:\users\kim jong-un\desktop\rgb_processingwin\rgb_processingwin\main.cpp(394): note: see reference to function template instantiation 'Value tbb::parallel_reduce<tbb::blocked_range2d<uint64_t,uint64_t>,float,countNumberOfColouredPixels::<lambda_62760ce51b9592986fbf2a067f4b9582>,countNumberOfColouredPixels::<lambda_e3d30f90366e9d46e0b778669e1cbed9>>(const Range &,const Value &,const RealBody &,const Reduction &)' being compiled
           with
           [
               Value=float,

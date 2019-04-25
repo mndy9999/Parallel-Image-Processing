@@ -266,9 +266,6 @@ fipImage computeAbsoluteDifference(fipImage inputImage1, fipImage inputImage2, b
 	int height = inputImage1.getHeight();
 	int width = inputImage2.getWidth();
 
-	vector<vector<RGBQUAD>> rgbValues;
-	rgbValues.resize(height, vector<RGBQUAD>(width));
-
 	fipImage outputImage;
 	outputImage = fipImage(FIT_BITMAP, width, height, 24);
 
@@ -276,8 +273,10 @@ fipImage computeAbsoluteDifference(fipImage inputImage1, fipImage inputImage2, b
 	if (parallel) {
 		tbb::parallel_for(blocked_range2d<uint64_t, uint64_t>(0, height, 0, width),
 			[&](const blocked_range2d<uint64_t, uint64_t> &r) {
+
 			RGBQUAD _rgb1;
 			RGBQUAD _rgb2;
+			RGBQUAD rgb;
 
 			auto y1 = r.rows().begin();
 			auto y2 = r.rows().end();
@@ -287,14 +286,17 @@ fipImage computeAbsoluteDifference(fipImage inputImage1, fipImage inputImage2, b
 			for (uint64_t y = y1; y != y2; y++) {
 				for (uint64_t x = x1; x != x2; x++) {
 
-					inputImage1.getPixelColor(x, y, &_rgb1); //Extract pixel(x,y) colour data and place it in rgb
+					//Extract pixel(x,y) colour data
+					inputImage1.getPixelColor(x, y, &_rgb1); 
 					inputImage2.getPixelColor(x, y, &_rgb2);
 
-					rgbValues[y][x].rgbRed = abs(_rgb1.rgbRed - _rgb2.rgbRed);
-					rgbValues[y][x].rgbGreen = abs(_rgb1.rgbGreen - _rgb2.rgbGreen);
-					rgbValues[y][x].rgbBlue = abs(_rgb1.rgbBlue - _rgb2.rgbBlue);
+					//calculate absolute difference for each colour value
+					rgb.rgbRed = abs(_rgb1.rgbRed - _rgb2.rgbRed);
+					rgb.rgbGreen = abs(_rgb1.rgbGreen - _rgb2.rgbGreen);
+					rgb.rgbBlue = abs(_rgb1.rgbBlue - _rgb2.rgbBlue);
 
-					outputImage.setPixelColor(x, y, &rgbValues[y][x]);
+					//set pixel colour in the new image
+					outputImage.setPixelColor(x, y, &rgb);
 				}
 			}
 		});
@@ -303,17 +305,18 @@ fipImage computeAbsoluteDifference(fipImage inputImage1, fipImage inputImage2, b
 
 		RGBQUAD _rgb1;
 		RGBQUAD _rgb2;
+		RGBQUAD rgb;
 		for (uint64_t y = 0; y < height; y++) {
 			for (uint64_t x = 0; x < width; x++) {
 
 				inputImage1.getPixelColor(x, y, &_rgb1); //Extract pixel(x,y) colour data and place it in rgb
 				inputImage2.getPixelColor(x, y, &_rgb2);
 
-				rgbValues[y][x].rgbRed = abs(_rgb1.rgbRed - _rgb2.rgbRed);
-				rgbValues[y][x].rgbGreen = abs(_rgb1.rgbGreen - _rgb2.rgbGreen);
-				rgbValues[y][x].rgbBlue = abs(_rgb1.rgbBlue - _rgb2.rgbBlue);
+				rgb.rgbRed = abs(_rgb1.rgbRed - _rgb2.rgbRed);
+				rgb.rgbGreen = abs(_rgb1.rgbGreen - _rgb2.rgbGreen);
+				rgb.rgbBlue = abs(_rgb1.rgbBlue - _rgb2.rgbBlue);
 
-				outputImage.setPixelColor(x, y, &rgbValues[y][x]);
+				outputImage.setPixelColor(x, y, &rgb);
 			}
 		}
 	}
@@ -338,7 +341,7 @@ void applyBinaryThreshold(fipImage &image, bool parallel = true) {
 			for (uint64_t y = y1; y != y2; y++) {
 				for (uint64_t x = x1; x != x2; x++) {
 					image.getPixelColor(x, y, &rgb);
-					if (rgb.rgbRed != 0 || rgb.rgbGreen != 0 || rgb.rgbBlue != 0)
+					if (rgb.rgbRed > 0 || rgb.rgbGreen > 0 || rgb.rgbBlue > 0)
 						image.setPixelColor(x, y, &white);
 				}
 			}
@@ -464,25 +467,27 @@ int main()
 
 	//Part 2 (Colour image processing): -----------DO NOT REMOVE THIS COMMENT----------------------------//
 
-	/*
+	
 	// Setup Input image array
 	fipImage inputImage1;
 	inputImage1.load("../Images/render_1.png");
 	fipImage inputImage2;
 	inputImage2.load("../Images/render_2.png");
 
-	unsigned int width = inputImage1.getWidth();
-	unsigned int height = inputImage1.getHeight();
-
-	int total_pixels = width * height;
+	unsigned int width = inputImage1.getWidth() > inputImage2.getWidth() ? inputImage1.getWidth() : inputImage2.getWidth();
+	unsigned int height = inputImage1.getHeight() > inputImage2.getHeight() ? inputImage1.getHeight() : inputImage2.getHeight();
 
 	// Setup Output image array
 	fipImage outputImage;
 	outputImage = fipImage(FIT_BITMAP, width, height, 24);
 
+
+	int total_pixels = width * height;
+
+
 	uint64_t count = 0;
-	vector<uint64_t>randomPos = { -1, -1 };
-	vector<uint64_t> pos = { -1, -1 };
+	vector<uint64_t>randomPos;
+	vector<uint64_t> pos;
 
 	RGBQUAD rgb;  //FreeImage structure to hold RGB values of a single pixel
 
@@ -493,7 +498,7 @@ int main()
 
 
 
-	/****************** SEQUENTIAL APPROACH ****************************
+	/****************** SEQUENTIAL APPROACH ****************************/
 
 	//save current time
 	auto st1 = high_resolution_clock::now();
@@ -538,7 +543,7 @@ int main()
 
 
 
-	/****************** PARALLEL APPROACH ****************************
+	/****************** PARALLEL APPROACH ****************************/
 
 	//save current time
 	auto pt1 = high_resolution_clock::now();
@@ -592,7 +597,7 @@ int main()
 	meanSpeedup /= double(numTests);
 	std::cout << "Mean speedup = " << meanSpeedup << endl << endl;
 
-	*/
+	
 
 	return 0;
 	
